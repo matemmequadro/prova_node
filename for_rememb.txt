@@ -168,3 +168,6 @@ app.get('/persone/:id',(req,res)=>{
 
 app.listen(port);
 //----------------------------------------
+
+
+//'prodotti/:idProdotto/recensioni/:idRecensione'=>per fare multiparametri
