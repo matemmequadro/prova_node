@@ -25,4 +25,9 @@ app.get('/persone',(req,res)=>{
     res.json(NewPersona);
 });
 
+app.get('/persone/:id',(req,res)=>{
+    console.log(req.params);
+    const persona=persone.find((persona)=>persona.id===req.params.id)
+    res.json(persona);
+});
 app.listen(port);
