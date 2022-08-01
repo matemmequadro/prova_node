@@ -8,20 +8,8 @@ const port = 3000;
 //localhost:3000
 // => console.log(`Example app listening on port ${port}!`)
 
-const middlewareProva=require('./middleware')
-
-app.use(middlewareProva)
-//->app.use('/persone',middlewareProva)
-app.get('/about',middlewareProva,(req,res)=>{
-    res.send("about")
-});
-app.get('/',(req,res)=>{
-    res.send("Homepage")
-});
-
-app.get('/about',(req,res)=>{
-    res.send("about")
-});
-
+app.get('/api/persone',(req,res)=>{
+    res.status(200).json({data:persone})
+})
 
 app.listen(port);

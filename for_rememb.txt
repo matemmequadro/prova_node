@@ -171,3 +171,8 @@ app.listen(port);
 
 
 //'prodotti/:idProdotto/recensioni/:idRecensione'=>per fare multiparametri
+app.use(middlewareProva)
+//->app.use('/persone',middlewareProva)
+app.get('/about',middlewareProva,(req,res)=>{
+    res.send("about")
+});
