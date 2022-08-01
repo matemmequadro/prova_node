@@ -14,7 +14,15 @@ const port = 3000;
 json->strutturare dati con un identificativo
 */
 app.get('/',(req,res)=>{
-    res.json(persone);
+    res.send("<h1>Homepage</h1> <a href='/persone'> Vai a persone</a>")
 })
+
+app.get('/persone',(req,res)=>{
+    const NewPersona=persone.map((persona)=>{
+        const{nome,cognome,eta}=persona;
+        return {nome,cognome,eta};
+    })
+    res.json(NewPersona);
+});
 
 app.listen(port);

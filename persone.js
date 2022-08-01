@@ -1,5 +1,6 @@
 const persone=[
     {
+        id: "1",
         nome: "Luca",
         cognome: "rossi",
         eta: 25,
@@ -11,6 +12,7 @@ const persone=[
         interesse:["napoli","basket"]
     },
     {
+        id: "2",
         nome: "patt",
         cognome: "rossi",
         eta: 21,
@@ -21,7 +23,8 @@ const persone=[
         },
         interesse:["nulla","aofasfsafs"]
     },
-    {
+    {   
+        id: "3",
         nome: "matt",
         cognome: "roswarwawasi",
         eta: 2121,
