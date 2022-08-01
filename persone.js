@@ -20,6 +20,17 @@ const persone=[
             CAP: 9192
         },
         interesse:["nulla","aofasfsafs"]
+    },
+    {
+        nome: "matt",
+        cognome: "roswarwawasi",
+        eta: 2121,
+        indirizzo: {
+            citta: "qwdqw",
+            via: "via qeqwCWARWE",
+            CAP: 91019
+        },
+        interesse:["csacasc ads","--asddsd--"]
     }
 ]
 
