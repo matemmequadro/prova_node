@@ -25,7 +25,31 @@ const persone=[
     },
     {   
         id: "3",
-        nome: "matt",
+        nome: "terzo",
+        cognome: "roswarwawasi",
+        eta: 2121,
+        indirizzo: {
+            citta: "qwdqw",
+            via: "via qeqwCWARWE",
+            CAP: 91019
+        },
+        interesse:["csacasc ads","--asddsd--"]
+    },
+    {   
+        id: "4",
+        nome: "quaety",
+        cognome: "roswarwawasi",
+        eta: 2121,
+        indirizzo: {
+            citta: "qwdqw",
+            via: "via qeqwCWARWE",
+            CAP: 91019
+        },
+        interesse:["csacasc ads","--asddsd--"]
+    },
+    {   
+        id: "5",
+        nome: "quinto",
         cognome: "roswarwawasi",
         eta: 2121,
         indirizzo: {
