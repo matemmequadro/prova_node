@@ -1,0 +1,128 @@
+
+//permettere di importare da altri file custom, ./file_name perché nella stessa directory
+/*
+fun_ut=require('./utilies')
+nomi=require('./nomi')
+*/
+//permettere di importare da altri file built-in, ./file_name perché nella stessa directory
+/*
+const os=require('os')
+const path=require('path')
+*/
+
+/*for(i=0;i<11;i++){
+    console.log("numero mammt:",i);
+}*/
+
+
+/*
+fun_ut.prova1();
+fun_ut.prova2();
+fun_ut.saluta(nomi.persona2);
+*/
+
+//console.log(os.type)
+//console.log(path.resolve(__dirname,__filename))
+
+/*
+const {readFileSync,writeFileSync}=require('fs')
+
+const prova=readFileSync('./prova.txt','utf-8', function (err, data) {
+    if(err) console.log('error', err);
+  });
+const ciao=readFileSync('./ciao.txt','utf-8', function (err, data) {
+    if(err) console.log('error', err);
+  });
+
+console.log(prova);
+console.log(ciao);
+
+writeFileSync('./strunz.txt','strunzolo!!!!!')
+-----------------------------------------------------------
+const {readFile,writeFile}=require('fs')
+
+readFile('./prova.txt','utf-8', (err, result)=>{
+    if(err) {
+        console.log('error', err)
+        return
+    }
+    console.log(result)
+    readFile('./ciao.txt','utf-8', (err, result)=>{
+        if(err) {
+            console.log('error', err)
+            return
+        }
+        console.log(result)
+    })
+})*/
+
+/*const http=require('http');
+
+const server=http.createServer((req,res)=>{
+    if(req.url === "/"){
+        res.end("Benvenuto")
+    }
+    if(req.url === "/matteo"){
+        res.end("Benvenuto emme_quadro")
+    }
+    res.end("<h1>Errore</h1> <p>Torna alla <a href="/">Home</a>, la pagina non esiste </p>"
+    )
+})
+
+
+server.listen(3000);*/
+
+/*const _ =require('lodash');
+
+const oggetti=[1,[2,[3,[4]]]];
+const oggetti2=_.flatMapDeep(oggetti);
+
+console.log(oggetti2);
+*/
+//npm init
+//npm install lodash
+
+//modificare nel json lo script, mettendo nodemon index 
+//per lanciare il programma e rimane in ascolto,
+//ad ogni nuovo save, rilancia, per uscire cnt+c
+
+/*const EventEmitter=require('events');
+const customEmitter=new EventEmitter();
+
+//iscrizione all'evento
+
+customEmitter.on('messaggio',(nome,anno)=>{
+    console.log(nome);
+});
+customEmitter.on('messaggio',()=>{
+    console.log("ciao, strunz messaggio");
+});
+customEmitter.on('lettera',()=>{
+    console.log("ciao, strunz lettera");
+});
+//emissione dell'evento
+customEmitter.emit('lettera');
+customEmitter.emit('messaggio','matteo','2022');*/
+//customEmitter.emit('messaggio');
+
+
+*/
+
+
+/*app.use(express.static('public'))
+
+app.get('/',(req,res)=>{
+    res.sendFile('home.html',{root: __dirname+"/public"})
+}
+);
+
+app.get('/about',(req,res)=>{
+    res.sendFile('chi siamo.html',{root: __dirname+"/public"})
+}
+);
+
+app.all('*',(req,res)=>{
+    res.send(`<h1>Nope</h1> <div>risorsa non trovata</div>  <p> <a href="/home.html">Torna arete</a> </p>`
+    )
+}
+);*/
